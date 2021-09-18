@@ -34,6 +34,9 @@ PRODUCT_PACKAGES += \
     Tag \
     com.android.nfc_extras
 
+# Overlays
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     capture.sh \
