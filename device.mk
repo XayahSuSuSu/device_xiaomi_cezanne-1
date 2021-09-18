@@ -174,6 +174,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
+# Trust
+PRODUCT_PACKAGES += \
+    lineage.trust@1.0-service
+
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service
