@@ -77,6 +77,10 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    lineage.livedisplay@2.0-service-mediatek
+
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
