@@ -44,6 +44,9 @@ PRODUCT_PACKAGES += \
     TelephonyResCommon \
     WifiResCommon
 
+PRODUCT_PACKAGES += \
+    CezanneFrameworks
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     capture.sh \
