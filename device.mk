@@ -100,5 +100,8 @@ PRODUCT_PACKAGES += \
     meta_init.rc \
     multi_init.rc
 
+# Shipping API
+PRODUCT_SHIPPING_API_LEVEL := 29
+
 # Inherit vendor
 $(call inherit-product, vendor/xiaomi/cezanne/cezanne-vendor.mk)
