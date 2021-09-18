@@ -6,12 +6,15 @@
 
 DEVICE_PATH := device/xiaomi/cezanne
 
+# APEX
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
+# Include GSI keys
+$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default
-
-# APEX
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Camera
 PRODUCT_PACKAGES += \
