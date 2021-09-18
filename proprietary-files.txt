@@ -115,8 +115,6 @@ vendor/lib/libaudiofmtconv.so
 vendor/lib/libaudioloudc.so
 vendor/lib/libaudioprimarydevicehalifclient.so
 vendor/lib/libaudiotoolkit_vendor.so
-vendor/lib/libtinycompress.so
-vendor/lib/soundfx/libaudiopreprocessing.so
 vendor/lib/soundfx/libmisoundfx.so
 vendor/lib64/libaudio_param_parser-vnd.so
 vendor/lib64/libaudiocompensationfilter_vendor.so
@@ -129,24 +127,14 @@ vendor/lib64/libaudiofmtconv.so
 vendor/lib64/libaudioloudc.so
 vendor/lib64/libaudioprimarydevicehalifclient.so
 vendor/lib64/libaudiotoolkit_vendor.so
-vendor/lib64/libtinycompress.so
-vendor/lib64/soundfx/libaudiopreprocessing.so
 
 # Audio-Hardware
 vendor/lib/hw/audio.usb.mt6885.so
-vendor/lib/hw/audio.usb.default.so
 vendor/lib/hw/audio.primary.mt6885.so
-vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.r_submix.mt6885.so
-vendor/lib/hw/audio.r_submix.default.so
-vendor/lib/hw/audio.bluetooth.default.so
 vendor/lib64/hw/audio.usb.mt6885.so
-vendor/lib64/hw/audio.usb.default.so
 vendor/lib64/hw/audio.primary.mt6885.so
-vendor/lib64/hw/audio.primary.default.so
 vendor/lib64/hw/audio.r_submix.mt6885.so
-vendor/lib64/hw/audio.r_submix.default.so
-vendor/lib64/hw/audio.bluetooth.default.so
 
 # Bluetooth (aptX) - from crosshatch - RQ1A.201205.003
 system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
@@ -156,21 +144,15 @@ system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-mediatek
 vendor/etc/audio_policy_configuration_bluetooth_legacy_hal.xml
 vendor/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc
-vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-mediatek.so
-vendor/lib/hw/audio.bluetooth.default.so
 vendor/lib/libbluetoothem_mtk.so
-vendor/lib/libbluetooth_audio_session.so
 vendor/lib/libbluetooth_hw_test.so
 vendor/lib/libbluetooth_mtk.so
 vendor/lib/libbluetooth_mtk_pure.so
 vendor/lib/libbluetooth_relayer.so
 vendor/lib/libbt-vendor.so
-vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-mediatek.so
-vendor/lib64/hw/audio.bluetooth.default.so
 vendor/lib64/libbluetoothem_mtk.so
-vendor/lib64/libbluetooth_audio_session.so
 vendor/lib64/libbluetooth_hw_test.so
 vendor/lib64/libbluetooth_mtk.so
 vendor/lib64/libbluetooth_mtk_pure.so
@@ -694,28 +676,18 @@ vendor/lib64/hw/consumerir.mt6885.so
 vendor/lib/liboemcrypto.so
 vendor/lib64/liboemcrypto.so
 
-# DRM-ClearKey
-vendor/bin/hw/android.hardware.drm@1.3-service.clearkey
-vendor/etc/init/android.hardware.drm@1.3-service.clearkey.rc
-
 # DRM-Widevine
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 vendor/lib/libwvhidl.so
-vendor/lib/mediadrm/libdrmclearkeyplugin.so
-vendor/lib/mediadrm/libmockdrmcryptoplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib64/libwvhidl.so
-vendor/lib64/mediadrm/libdrmclearkeyplugin.so
-vendor/lib64/mediadrm/libmockdrmcryptoplugin.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 
 # Display-Hardware
 vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
-vendor/lib/hw/gralloc.default.so
 vendor/lib/hw/memtrack.mt6885.so
 vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
-vendor/lib64/hw/gralloc.default.so
 vendor/lib64/hw/hwcomposer.mt6885.so
 vendor/lib64/hw/memtrack.mt6885.so
 
@@ -922,11 +894,7 @@ vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_T-Mobile_US.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml
 
 # Gatekeeper
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service
-vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so
 vendor/lib/hw/libSoftGatekeeper.so
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so
 vendor/lib64/hw/libSoftGatekeeper.so
 
 # Graphics
@@ -966,17 +934,8 @@ vendor/lib/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
 vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
-vendor/lib64/libkeymaster4.so
-vendor/lib64/libkeymaster4support.so
-vendor/lib64/libkeymaster_messages.so
-vendor/lib64/libkeymaster_portable.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
-
-# Keystore
-vendor/lib/libkeystore-wifi-hidl.so
-vendor/lib64/libkeystore-wifi-hidl.so
-vendor/lib64/libkeystore-engine-wifi-hidl.so
 
 # Listen
 vendor/lib64/hw/sound_trigger.primary.mt6885.so
@@ -1021,7 +980,6 @@ vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
 vendor/etc/init/android.hardware.secure_element@1.0-service-mediatek.rc
 vendor/etc/media_codecs_mediatek_audio.xml
 vendor/etc/media_codecs_mediatek_video.xml
-vendor/etc/vintf/manifest/vendor.mediatek.hardware.dplanner@2.0-service.xml
 vendor/lib/hw/vendor.mediatek.hardware.pq@2.6-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.mms@1.5-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.nvram@1.1-impl.so
@@ -1279,7 +1237,6 @@ vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 # Neural-networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc
-vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-mtk-mdla-dsp-gpu.xml
 
 # Power (Hardware)
 vendor/etc/power_app_cfg.xml
@@ -1288,8 +1245,6 @@ vendor/bin/hw/power_native_test_v_1_1
 vendor/etc/powercontable.xml
 vendor/lib64/hw/power.mt6885.so
 vendor/lib/hw/power.mt6885.so
-vendor/lib64/hw/power.default.so
-vendor/lib/hw/power.default.so
 
 # Power (Interfaces - mtkpower)
 vendor/lib/vendor.mediatek.hardware.mtkpower@1.0.so
@@ -1320,11 +1275,9 @@ vendor/lib/libvsim.so
 
 # Sensors
 vendor/lib/hw/sensors.touch.so
-vendor/lib/libsensorndkbridge.so
 vendor/lib/libssccalapi.so
 vendor/lib64/hw/sensors.mt6885.so
 vendor/lib64/hw/sensors.touch.so
-vendor/lib64/libsensorndkbridge.so
 vendor/lib64/libsensor_custom.so
 vendor/lib64/libssccalapi.so
 
@@ -1360,9 +1313,7 @@ vendor/etc/thermal-chg-only.conf
 vendor/etc/thermal-nolimits.conf
 vendor/etc/thermal-youtube.config
 vendor/etc/thermald-devices.conf
-vendor/lib/hw/android.hardware.thermal@1.0-impl.so
 vendor/lib/libthermalalgo.so
-vendor/lib64/hw/android.hardware.thermal@1.0-impl.so
 
 # Thermal-Hardware
 vendor/lib/hw/thermal.mt6885.so
@@ -1375,7 +1326,6 @@ vendor/bin/hw/wpa_supplicant
 vendor/bin/wpa_cli
 vendor/etc/init/hostapd.android.rc
 vendor/lib/libwpa_client.so
-vendor/lib64/libwifi-hal.so
 vendor/lib64/libwpa_client.so
 
 # Xiaomi
@@ -1477,7 +1427,6 @@ vendor/bin/dexecutor
 vendor/bin/doeapp-memtester
 vendor/bin/doeapp-sat
 vendor/bin/dtc_vendor
-vendor/bin/dumpsys
 vendor/bin/em_hidl
 vendor/bin/fuelgauged_nvram
 vendor/bin/gsm0710muxd
@@ -1529,27 +1478,18 @@ vendor/etc/FV-SAM-MTK2.dat
 vendor/etc/init/aee_aedv.rc
 vendor/etc/init/aee_aedv64.rc
 vendor/etc/init/android.hardware.audio.service.mediatek.rc
-vendor/etc/init/android.hardware.cas@1.2-service.rc
-vendor/etc/init/android.hardware.configstore@1.1-service.rc
 vendor/etc/init/android.hardware.dumpstate@1.1-service.xiaomi.rc
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
-vendor/etc/init/android.hardware.graphics.composer@2.2-service.rc
-vendor/etc/init/android.hardware.health@2.1-service.rc
-vendor/etc/init/android.hardware.ir@1.0-service.rc
-vendor/etc/init/android.hardware.media.omx@1.0-service.rc
-vendor/etc/init/android.hardware.memtrack@1.0-service.rc
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc
 vendor/etc/init/android.hardware.secure_element@1.0-service-mediatek.rc
 vendor/etc/init/android.hardware.sensors@2.0-service-mediatek.rc
 vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc
 vendor/etc/init/android.hardware.usb@1.1-service-mediatek.rc
 vendor/etc/init/android.hardware.wifi.supplicant-service.rc
-vendor/etc/init/android.hardware.wifi@1.0-service-lazy.rc
 vendor/etc/init/atcid.rc
 vendor/etc/init/atci_service.rc
 vendor/etc/init/audiocmdservice_atci.rc
 vendor/etc/init/bootperf.rc
-vendor/etc/init/boringssl_self_test.rc
 vendor/etc/init/camerahalserver.rc
 vendor/etc/init/em_hidl_user.rc
 vendor/etc/init/fuelgauged_init.rc
@@ -1619,8 +1559,6 @@ vendor/etc/init/vendor.xiaomi.hardware.tidaservice@1.1-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.touchfeature@1.0-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.vibratorfeature@1.0-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.vsimapp@1.0-service.rc
-vendor/etc/init/vendor_flash_recovery.rc
-vendor/etc/init/vndservicemanager.rc
 vendor/etc/init/vpud.rc
 vendor/etc/init/wlan_assistant.rc
 vendor/etc/aurisys_param/FV-SAM-MTKXX.dat
