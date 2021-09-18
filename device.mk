@@ -34,5 +34,42 @@ PRODUCT_PACKAGES += \
     Tag \
     com.android.nfc_extras
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    capture.sh \
+    capture_headsetmic.sh \
+    playback.sh \
+    playback_headset.sh \
+    setup_backmic2headphone.sh \
+    setup_headsetmic2headphone.sh \
+    setup_headsetmic2rcv.sh \
+    setup_mainmic2headphone.sh \
+    setup_rcv2backmic.sh \
+    setup_rcv2mainmic.sh \
+    setup_rcv2topmic.sh \
+    setup_topmic2headphone.sh \
+    teardown_loopback.sh \
+    water_cooling_check.sh
+
+PRODUCT_PACKAGES += \
+    fstab.mt6885 \
+    ueventd.mtk.rc \
+    factory_init.connectivity.rc \
+    factory_init.project.rc \
+    factory_init.rc \
+    init.aee.rc \
+    init.ago.rc \
+    init.connectivity.rc \
+    init.modem.rc \
+    init.mt6885.rc \
+    init.mt6885.usb.rc \
+    init.project.rc \
+    init.sensor_2_0.rc \
+    meta_init.connectivity.rc \
+    meta_init.modem.rc \
+    meta_init.project.rc \
+    meta_init.rc \
+    multi_init.rc
+
 # Inherit vendor
 $(call inherit-product, vendor/xiaomi/cezanne/cezanne-vendor.mk)
