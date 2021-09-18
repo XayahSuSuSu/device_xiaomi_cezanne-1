@@ -106,5 +106,11 @@ PRODUCT_PACKAGES += \
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
 
+# WiFi
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/wlan/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
+    $(LOCAL_PATH)/configs/wlan/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
+    $(LOCAL_PATH)/configs/wlan/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
+
 # Inherit vendor
 $(call inherit-product, vendor/xiaomi/cezanne/cezanne-vendor.mk)
