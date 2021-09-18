@@ -47,6 +47,9 @@ PRODUCT_PACKAGES += \
     Tag \
     com.android.nfc_extras
 
+# Namespaces
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
+
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
