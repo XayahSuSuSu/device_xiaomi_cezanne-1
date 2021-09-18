@@ -15,22 +15,53 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
+# Atrace
+PRODUCT_PACKAGES += \
+    android.hardware.atrace@1.0-service
+
 # Audio
 PRODUCT_PACKAGES += \
-    audio.a2dp.default
+    audio.a2dp.default \
+    android.hardware.audio.effect@6.0-impl \
+    android.hardware.audio.service \
+    android.hardware.audio@6.0-impl \
+    android.hardware.soundtrigger@2.3-impl
+
+PRODUCT_COPY_FILES += \
+    frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml \
+    frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
+    frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
+    frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml
+
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth.audio@2.0-impl
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    Snap \
+    android.hardware.camera.provider@2.4-impl \
+    android.hardware.camera.provider@2.4-service_64
 
 # Display
 PRODUCT_PACKAGES += \
     libvulkan \
-    vendor.display.config@1.0
+    vendor.display.config@1.0 \
+    android.hardware.memtrack@1.0-impl \
+    android.hardware.memtrack@1.0-service
+
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.3-service.clearkey
 
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
+
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-service
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -40,6 +71,11 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder \
     libhwbinder.vendor
+
+# IR
+PRODUCT_PACKAGES += \
+    android.hardware.ir@1.0-impl \
+    android.hardware.ir@1.0-service
 
 # Net
 PRODUCT_PACKAGES += \
@@ -115,6 +151,15 @@ PRODUCT_PACKAGES += \
     meta_init.rc \
     multi_init.rc
 
+# RenderScript
+PRODUCT_PACKAGES += \
+    android.hardware.renderscript@1.0-impl
+
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0-impl \
+    android.hardware.sensors@1.0-service
+
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
 
@@ -130,6 +175,9 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
 # WiFi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wlan/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wlan/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
