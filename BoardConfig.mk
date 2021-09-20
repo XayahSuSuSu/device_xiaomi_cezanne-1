@@ -159,5 +159,9 @@ include device/mediatek/sepolicy_vndr/SEPolicy.mk
 # VNDK
 PRODUCT_VENDOR_MOVE_ENABLED := true
 
+# Wi-Fi
+WIFI_HIDL_FEATURE_AWARE := true
+WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
+
 # Inherit from the proprietary version
 include vendor/xiaomi/cezanne/BoardConfigVendor.mk
