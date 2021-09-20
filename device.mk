@@ -103,6 +103,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-mediatek
 
+# Media Codec2 modules
+PRODUCT_PACKAGES += \
+    com.android.media.swcodec \
+    libsfplugin_ccodec
+
 # Media
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
