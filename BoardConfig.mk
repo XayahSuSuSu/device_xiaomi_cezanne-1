@@ -157,7 +157,6 @@ ENABLE_VENDOR_RIL_SERVICE := true
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
 # VNDK
-BOARD_VNDK_VERSION := current
 BOARD_VNDK_RUNTIME_DISABLE := true
 PRODUCT_VENDOR_MOVE_ENABLED := true
 
