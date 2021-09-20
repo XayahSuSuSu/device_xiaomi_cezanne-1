@@ -319,5 +319,11 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
     android.hardware.vibrator@1.0-service
 
+# WiFi
+PRODUCT_PACKAGES += \
+    hostapd \
+    libwpa_client \
+    wpa_supplicant
+
 # Inherit vendor
 $(call inherit-product, vendor/xiaomi/cezanne/cezanne-vendor.mk)
