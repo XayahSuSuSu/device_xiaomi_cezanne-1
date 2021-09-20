@@ -673,10 +673,6 @@ vendor/etc/camera/vidhance_calibration
 vendor/lib/hw/consumerir.mt6885.so
 vendor/lib64/hw/consumerir.mt6885.so
 
-# DRM
-vendor/lib/liboemcrypto.so
-vendor/lib64/liboemcrypto.so
-
 # DRM-Widevine
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
