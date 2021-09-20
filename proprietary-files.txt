@@ -1471,7 +1471,6 @@ vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
 vendor/etc/init/vendor.mediatek.hardware.vpu@1.0-service.rc
 vendor/etc/init/vendor.microtrust.hardware.se@1.0-service.rc
 vendor/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc
-vendor/etc/init/vendor.mtk.hardware.vibrator@1.2-service.rc
 vendor/etc/init/vendor.nxp.hardware.nfc@1.2-service.rc
 vendor/etc/init/vendor.qti.sla.service@1.0-service.rc
 vendor/etc/init/vendor.rongcard.hardware.eid@1.0-service.rc
@@ -1482,7 +1481,6 @@ vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.2-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.tidaservice@1.1-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.touchfeature@1.0-service.rc
-vendor/etc/init/vendor.xiaomi.hardware.vibratorfeature@1.0-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.vsimapp@1.0-service.rc
 vendor/etc/init/vpud.rc
 vendor/etc/init/wlan_assistant.rc
