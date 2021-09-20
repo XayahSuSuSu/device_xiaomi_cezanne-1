@@ -31,4 +31,5 @@ vendor.mediatek.hardware.apuware.xrp@1.0.so 64
 libSuperSensor.so 64
 libSuperSensorCPU.so 64
 libSuperSensorProcessor.so 64
-
+libprotobuf-cpp-full.so
+libprotobuf-cpp-lite.so
