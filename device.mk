@@ -275,6 +275,10 @@ PRODUCT_PACKAGES += \
     meta_init.rc \
     multi_init.rc
 
+# Ramdisk For Kernel
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt6885:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6885
+
 # RenderScript
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
