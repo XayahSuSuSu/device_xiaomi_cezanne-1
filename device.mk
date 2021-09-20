@@ -13,9 +13,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # MTK Vendor Repos
+MTK_PLATFORM := mt6885
 $(call inherit-product, vendor/mediatek/ims/mtk-ims.mk)
 $(call inherit-product, vendor/mediatek/ims/mtk-engi.mk)
-$(call inherit-product, vendor/mediatek/opensource/mtk-builds.mk)
+$(call inherit-product, device/mediatek/common/target.mk)
 
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
