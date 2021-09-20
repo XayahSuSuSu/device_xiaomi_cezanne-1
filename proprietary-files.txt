@@ -115,7 +115,6 @@ vendor/lib/libaudiofmtconv.so
 vendor/lib/libaudioloudc.so
 vendor/lib/libaudioprimarydevicehalifclient.so
 vendor/lib/libaudiotoolkit_vendor.so
-vendor/lib/soundfx/libmisoundfx.so
 vendor/lib64/libaudio_param_parser-vnd.so
 vendor/lib64/libaudiocompensationfilter_vendor.so
 vendor/lib64/libaudiocompensationfilterc.so
@@ -1643,7 +1642,6 @@ vendor/etc/mdota/MTK_OTA_CT.mcfota
 vendor/etc/mdota/MTK_OTA_CU.mcfota
 vendor/etc/mdota/MTK_OTA_REL10.mcfota
 vendor/etc/mdota/MTK_OTA_REL11.mcfota
-vendor/etc/misound_res.bin
 vendor/etc/mpe.conf
 vendor/etc/mtk_omx_core.cfg
 vendor/etc/pm_test_item_config.xml
