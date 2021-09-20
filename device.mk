@@ -259,9 +259,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.mt6885 \
     ueventd.mtk.rc \
-    factory_init.connectivity.rc \
-    factory_init.project.rc \
-    factory_init.rc \
     init.ago.rc \
     init.connectivity.rc \
     init.modem.rc \
