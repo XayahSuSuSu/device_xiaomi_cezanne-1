@@ -7,6 +7,7 @@ import /FWUpgradeInit.rc
 import ${ro.vendor.rc}init.volte.rc
 import ${ro.vendor.rc}init.mal.rc
 import ${ro.vendor.rc}${ro.vendor.init.sensor.rc}
+import /vendor/etc/init/hw/init.logcat.rc
 
 # init.modem.rc must be the LAST rc file because vold.post_fs_data_done is set in it
 import ${ro.vendor.rc}init.modem.rc

@@ -263,7 +263,8 @@ PRODUCT_PACKAGES += \
     meta_init.modem.rc \
     meta_init.project.rc \
     meta_init.rc \
-    multi_init.rc
+    multi_init.rc \
+    init.logcat.rc
 
 # Ramdisk For Kernel
 PRODUCT_COPY_FILES += \
