@@ -143,6 +143,9 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
+# Sepolicy
+include device/mediatek/sepolicy/sepolicy.mk
+
 # VNDK
 PRODUCT_VENDOR_MOVE_ENABLED := true
 
