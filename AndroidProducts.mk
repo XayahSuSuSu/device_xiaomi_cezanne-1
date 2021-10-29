@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_cezanne.mk
+    $(LOCAL_DIR)/dot_cezanne.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_cezanne-eng \
-    lineage_cezanne-user \
-    lineage_cezanne-userdebug
+    dot_cezanne-eng \
+    dot_cezanne-user \
+    dot_cezanne-userdebug

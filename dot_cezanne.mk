@@ -11,10 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from the device configuration.
 $(call inherit-product, device/xiaomi/cezanne/device.mk)
 
-# Inherit from the Lineage configuration.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit from the DotOS configuration.
+$(call inherit-product, vendor/dot/config/common.mk)
 
-PRODUCT_NAME := lineage_cezanne
+PRODUCT_NAME := dot_cezanne
 PRODUCT_DEVICE := cezanne
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := M2006J10C
