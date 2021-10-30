@@ -20,28 +20,6 @@ PRODUCT_PACKAGES += \
     android.hardware.atrace@1.0-service
 
 # Audio
-PRODUCT_PACKAGES += \
-    android.hardware.audio.effect@6.0-impl \
-    android.hardware.soundtrigger@2.3-impl \
-    android.hardware.bluetooth.audio@2.0-impl \
-    audio.a2dp.default \
-    audio.bluetooth.default \
-    audio.r_submix.default \
-    audio.usb.default \
-    audio_policy.stub \
-    libaudiopreprocessing \
-    libbundlewrapper \
-    libdownmix \
-    libdynproc \
-    libeffectproxy \
-    libldnhncr \
-    libreverbwrapper \
-    libvisualizer \
-    libtinycompress \
-    libaudiofoundation \
-    libaudiofoundation.vendor \
-    libtinycompress.vendor
-
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
